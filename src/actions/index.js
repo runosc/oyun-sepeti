@@ -2,4 +2,4 @@
 export * from './CartActions'
 
 // flag actions
-export * from './FlagActions'
+export * from './PeopleActions'

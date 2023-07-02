@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { sepetiTemizle, adetArttir, adetAzalt } from "../actions";
 import { FaTrash } from "react-icons/fa";
-import Flags from "./Flags";
+import PeopleList from "./PeopleList";
 
 const Cart = (props) => {
     console.log("PPPP", props)
@@ -73,7 +73,7 @@ const Cart = (props) => {
                         {/* Bir işlevi yok API kullanımına örnek olması açısından yazdım */}
                         <p className="w-100 bg-primary text-white font-bold px-2 py-2 text-center">Hediye</p>
                         <div className="">
-                            <Flags />
+                            <PeopleList />
                         </div>
                     </div>
                 </div>

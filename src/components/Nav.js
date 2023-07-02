@@ -3,7 +3,6 @@ import { FaUser, FaUserPlus, FaMoon, FaShoppingCart, FaGamepad } from "react-ico
 import { connect } from "react-redux";
 import Switcher from "../components/Switcher";
 import { Link } from "react-router-dom";
-import Flags from "../components/Flags";
 
 const Nav = (props) => {
 
@@ -40,10 +39,6 @@ const Nav = (props) => {
           Üye ol
         </button>
         <Switcher className="" />
-      
-        {/* <button id="darkModeToggle" className="text-white flex items-center hover:text-green-400">
-          <FaMoon className="mr-2" />
-        </button> */}
       </div>
     </div>
   </div>

@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import CartReducer from './CartReducer'
-import FlagReducer from './FlagReducer'
+import PeopleReducer from './PeopleReducer'
 
 const reducers = combineReducers({
 	cart: CartReducer,
-	flag: FlagReducer,
+	people: PeopleReducer,
 });
 
 export default reducers;
