@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { getPeople } from "../actions/PeopleActions";
 import { FaGift } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
-//Bu sadece bir API kullanım örneği
+
+//Bu sadece bir API kullanım örneği bir işlevi yok
 
 const PeopleList = (props) => {
+  const { t, i18n } = useTranslation();
+
     const people = props.people
-    console.log("people",people)
     useEffect(() => {
         props.getPeople();
     }, []);
@@ -17,8 +20,8 @@ const PeopleList = (props) => {
             <table className="w-full  ">
                 <thead>
                     <tr >
-                        <th className="text-left">Adı</th>
-                        <th className="text-left">İşlem</th>
+                        <th className="text-left">{t('adi')}</th>
+                        <th className="text-left">{t('islem')}</th>
                     </tr>
                 </thead>
                 <tbody>
